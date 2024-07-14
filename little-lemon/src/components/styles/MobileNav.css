@@ -1,0 +1,25 @@
+.mobile-nav {
+    display: none;
+}
+
+@media screen and (max-width: 1024px) {
+
+    .mobile-nav {
+        display: flex;        
+    }
+
+    .mobile-nav ul li a {
+        font-size: smaller;
+        font-weight: 500;
+        transition: color 0.3s ease, background-color 0.3s ease; /* Smooth transition for hover effect */
+    }
+
+    .mobile-nav ul li a:hover {
+        color: #ffffff; /* Change text color on hover */
+        background-color: #495e57; /* Change background color on hover */
+    }
+
+    .mobile-nav ul li .active-links.active {
+        color: #495e57;
+    }
+}

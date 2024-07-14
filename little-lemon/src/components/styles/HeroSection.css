@@ -1,0 +1,137 @@
+/* Base styles */
+.hero-section-background {
+    background-color: #495e57;
+    width: 100%;
+}
+
+.hero-section-container {
+    display: flex;
+    justify-content: space-between;
+    width: 85%;
+    margin: 0 auto;
+    padding: 60px 0;
+    color: #fff;
+}
+
+.section-left {
+    width: 80%;
+}
+
+.section-left h1 {
+    color: #f4ce14;
+    font-size: 3rem; /* Adjusted font size */
+    line-height: 1.2; /* Improved line height */
+    margin-bottom: 20px;
+}
+
+.section-left h2 {
+    font-size: 2rem; /* Adjusted font size */
+    margin-bottom: 20px;
+}
+
+.section-left p {
+    width: 75%;
+    margin: 20px 0;
+    font-size: 1rem; /* Adjusted font size */
+    line-height: 1.6; /* Improved line height for readability */
+}
+
+.btn {
+    padding: 15px 30px;
+    font-size: 1rem; /* Adjusted font size */
+    font-weight: 600;
+    background-color: #f4ce14;
+    color: #333333;
+    border-radius: 20px;
+    border: none;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.btn:hover {
+    cursor: pointer;
+    background-color: #333333;
+    color: #f4ce14;
+}
+
+.section-right {
+    width: 400px;
+    position: relative;
+}
+
+.image-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+    border-radius: 10px;
+    position: absolute;
+    overflow: hidden;
+}
+
+.image-box img {
+    width: 100%;
+    height: auto;
+}
+
+/* Media queries for responsive design */
+
+@media screen and (max-width: 1024px) {
+    .hero-section-background {
+        padding-top: 10vh;
+    }
+
+    .hero-section-container {
+        width: 100%;
+        padding: 30px;
+    }
+
+    .section-left h1 {
+        font-size: 2.5rem; /* Adjusted font size for smaller screens */
+    }
+
+    .section-left h2 {
+        font-size: 2rem; /* Adjusted font size for smaller screens */
+    }
+}
+
+@media screen and (max-width: 659px) {
+    .hero-section-container {
+        flex-direction: column; /* Stack sections vertically on smaller screens */
+        align-items: center; /* Center-align items */
+    }
+
+    .section-left {
+        width: 100%; /* Full width for section-left on smaller screens */
+        text-align: center; /* Center-align text */
+    }
+
+    .section-left h1 {
+        font-size: 2rem; /* Adjusted font size for smaller screens */
+    }
+
+    .section-left h2 {
+        font-size: 1.5rem; /* Adjusted font size for smaller screens */
+    }
+
+    .section-left p {
+        width: 100%; /* Full width for paragraphs */
+        font-size: 0.875rem; /* Smaller font size */
+        margin: 15px 0; /* Reduced margin for paragraphs */
+    }
+
+    .section-right {
+        width: 100%; /* Full width for section-right on smaller screens */
+        margin-top: 20px; /* Adjusted margin */
+        position: static; /* Remove absolute positioning */
+    }
+
+    .image-box {
+        width: 100%;
+        height: 250px; /* Adjusted height for smaller screens */
+    }
+
+    .btn {
+        font-size: 0.875rem; /* Smaller font size */
+        padding: 12px 24px; /* Adjusted padding for smaller screens */
+    }
+}

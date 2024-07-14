@@ -1,0 +1,156 @@
+.res-content-wrapper {
+    background-color: #495e57;
+    width: 100%;
+    padding: 80px 0;
+}
+
+.res-content-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    width: 85%;
+    margin: 0 auto;
+    color: #fff;
+}
+
+.text {
+    width: 100%;
+    text-align: center;
+}
+
+.text h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.text p {
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+}
+
+.form {
+    width: 100%;
+    max-width: 500px;
+    background-color: #fff;
+    color: #333333;
+    border-radius: 10px;
+    padding: 40px 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.form h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #495e57;
+}
+
+.form p {
+    font-size: 1rem;
+    margin-bottom: 30px;
+    text-align: center;
+    color: #495e57;
+}
+
+fieldset {
+    border: none;
+    padding: 0;
+    margin: 0;
+}
+
+.field {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.field label {
+    font-size: 1rem;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #495e57;
+}
+
+input, select {
+    padding: 15px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    width: 100%;
+    font-size: 1rem;
+    color: #333333;
+    transition: border-color 0.3s;
+}
+
+input:focus, select:focus {
+    border-color: #495e57;
+    outline: none;
+}
+
+input[type=datetime-local] {
+    color: #495e57;
+}
+
+.guestsdate {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.reserve-btn {
+    width: 100%;
+    padding: 15px;
+    cursor: pointer;
+    background-color: #495e57;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #fff;
+    text-align: center;
+    margin-top: 20px;
+    transition: background-color 0.3s;
+}
+
+.reserve-btn:hover {
+    background-color: #333;
+}
+
+.error-message {
+    font-size: 1rem;
+    color: red;
+    margin-top: 5px;
+    text-align: center;
+}
+
+@media screen and (max-width: 1024px) {
+    .res-content-container {
+        width: 100%;
+        padding: 50px 30px;
+    }
+
+    .text {
+        width: 100%;
+        text-align: center;
+    }
+
+    .text h2 {
+        font-size: 2rem;
+    }
+
+    .text p {
+        margin-bottom: 20px;
+    }
+
+    .form {
+        width: 100%;
+        margin-top: 30px;
+        max-width: 100%;
+    }
+
+    .guestsdate {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+}
